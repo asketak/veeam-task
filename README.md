@@ -11,7 +11,7 @@ This repository contains two Python scripts designed for synchronizing files and
 
 - **Synchronization**: Synchronizing the directories and file from source to replica.
 - **Logging**: All operations (file copying, file removal, etc.) are logged in logfile.
-- **Optimized MD5 Checksums**: The scripts uses filesize and time of last modification to detect if the files have been modified in order to reduce the amount of MD5 hashes the scripts need to calculate. The md5 or files is calculated only if the filesize and time of last modification are the same in source and replica.
+- **Optimized MD5 Checksums**: The scripts uses filesize and time of last modification to detect if the files have been modified in order to reduce the amount of MD5 hashes the scripts need to calculate. The md5 of files is calculated only if the filesize and time of last modification are the same in source and replica.
 - **Skip Symbolic Links**: An optional flag allows the scripts to skip symbolic links and special files, which can be useful in certain synchronization contexts. Prevents for example infinite loops, if the device file the directory is stored in the sync directory.
 
 ## Usage
