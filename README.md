@@ -18,7 +18,7 @@ This repository contains two Python scripts designed for synchronizing files and
 
 ### sync-loop.py
 
-{python sync-loop.py <source> <replica> <interval> <log_file> [--skip-symlinks]}
+` python sync-loop.py <source> <replica> <interval> <log_file> [--skip-symlinks] `
 
 - `source`: Path to the source directory.
 - `replica`: Path to the replica directory.
@@ -28,6 +28,6 @@ This repository contains two Python scripts designed for synchronizing files and
 
 ### sync-cron.py
 
-{python sync-cron.py <source> <replica> <interval> <log_file> [--skip-symlinks]}
+` python sync-cron.py <source> <replica> <interval> <log_file> [--skip-symlinks] `
 
 - The arguments are the same as `sync-loop.py`.
