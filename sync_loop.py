@@ -23,7 +23,7 @@ def file_needs_update(src_file, dst_file):
         return True
     return md5(src_file) != md5(dst_file)
 
-def sync_folders(source, replica, skip_symlinks):
+def sync_folders(source, replica, skip_symlinks=True):
     for src_dir, dirs, files in os.walk(source):
         dst_dir = src_dir.replace(source, replica, 1)
         # Creating new directories
